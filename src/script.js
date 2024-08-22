@@ -17,11 +17,7 @@ function startCountdown(targetDate) {
     const now = new Date().getTime();
     const distance = targetDate - now;
 
-    if (distance < 0) {
-      clearInterval(countdown);
-      document.getElementById('timer').innerHTML = "EXPIRADO";
-      return;
-    }
+    
 
     const years = Math.floor(distance / (1000 * 60 * 60 * 24 * 365));
     const days = Math.floor((distance % (1000 * 60 * 60 * 24 * 365)) / (1000 * 60 * 60 * 24));
