@@ -1,24 +1,38 @@
-const targetDate = new Date('2024-09-07T00:00:00');
+let countdown;
 
-function updateCountdown() {
-  const currentTime = new Date();
-  const difference = targetDate - currentTime;
+document.getElementById('start-button').addEventListener('click', function() {
+  const dateInput = document.getElementById('date-input').value;
+  if (dateInput) {
+    const targetDate = new Date(dateInput);
+    startCountdown(targetDate);
+  }
+});
 
-  const days = Math.floor(difference / (1000 * 60 * 60 * 24));
-  const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
-  const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+function startCountdown(targetDate) {
+  if (countdown) {
+    clearInterval(countdown); // Limpa o intervalo existente
+  }
 
-  const years = Math.floor(days / 365); // Calcula os anos
-  const remainingDays = days % 365; // Dias restantes após considerar os anos
+  countdown = setInterval(function() {
+    const now = new Date().getTime();
+    const distance = targetDate - now;
 
-  document.getElementById("years").innerText = years;
-  document.getElementById("days").innerText = remainingDays;
-  document.getElementById("hours").innerText = hours;
-  document.getElementById("minutes").innerText = minutes;
-  document.getElementById("seconds").innerText = seconds;
-  document.getElementById("time").innerText = `Para: ${targetDate.toLocaleString()}`;
+    if (distance < 0) {
+      clearInterval(countdown);
+      document.getElementById('timer').innerHTML = "EXPIRADO";
+      return;
+    }
+
+    const years = Math.floor(distance / (1000 * 60 * 60 * 24 * 365));
+    const days = Math.floor((distance % (1000 * 60 * 60 * 24 * 365)) / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById('years').innerHTML = years;
+    document.getElementById('days').innerHTML = days;
+    document.getElementById('hours').innerHTML = hours;
+    document.getElementById('minutes').innerHTML = minutes;
+    document.getElementById('seconds').innerHTML = seconds;
+  }, 1000);
 }
-
-
-const interval = setInterval(updateCountdown, 1000);
