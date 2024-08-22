@@ -34,9 +34,9 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 20px;
-    margin-top: 40px;
-    font-size: 1.2rem;
+    gap: 50px;
+    margin-top: 0px;
+    font-size: 1.8rem;
 }
 
 #start-button {
@@ -46,10 +46,10 @@ body {
     font-size: 1.5rem;
     padding: 20px 40px;
     border-radius: 10px;
-    background: linear-gradient(135deg, #007BFF, #6C757D); /* Gradiente de azul para cinza */
+    background: linear-gradient(135deg, #007BFF, #000000); /* Gradiente de azul para cinza */
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 #start-button:hover {
-    background: linear-gradient(135deg, #6C757D, #007BFF); /* Gradiente de cinza para azul */
+    background: linear-gradient(135deg, #000000, #007bff); /* Gradiente de cinza para azul */
 }   
