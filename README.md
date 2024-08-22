@@ -18,4 +18,4 @@ Bem-vindo ao repositório do projeto "Contagem Regressiva"! Este projeto foi des
 
 ## Captura de tela
 
-![foto](https://i.ibb.co/jMH2xYd/Captura-de-tela-2024-07-25-134938.png)
+![foto](https://i.ibb.co/1dnQbFH/Captura-de-tela-2024-08-22-195826.png)
