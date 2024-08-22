@@ -1,14 +1,8 @@
-# 16 Projetos em JavaScript
+# Contagem Regressiva
 
-Bem-vindo ao repositório "16 Projetos em JavaScript"! Neste repositório, você encontrará uma coleção de 16 projetos práticos desenvolvidos em JavaScript, projetados que me ajudaram a aprimorar minhas habilidades e ganhar experiência prática.
+Bem-vindo ao repositório do projeto "Contagem Regressiva"! Este projeto foi desenvolvido em JavaScript para criar um cronômetro de contagem regressiva dinâmico, ideal para sites que apresentam próximos eventos ou vendas. Ele demonstra como usar JavaScript para criar interatividade em páginas da web.
 
-## Projetos
-
-### 1. Contagem Regressiva
-
-Este projeto cria um cronômetro de contagem regressiva dinâmico. Ideal para sites que apresentam próximos eventos ou vendas, este cronômetro demonstra como usar JavaScript para criar interatividade em páginas da web.
-
-#### Habilidades abordadas:
+## Habilidades abordadas
 
 - Manipulação de objeto de data (`Date`)
 - Atualização dinâmica de conteúdo HTML
@@ -22,24 +16,6 @@ Este projeto cria um cronômetro de contagem regressiva dinâmico. Ideal para si
 - CSS
 - JavaScript
 
-## Captura de tela: 
+## Captura de tela
 
 ![foto](https://i.ibb.co/jMH2xYd/Captura-de-tela-2024-07-25-134938.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
