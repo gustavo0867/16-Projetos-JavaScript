@@ -1,17 +1,14 @@
+let countdown;
+
 document.getElementById('start-button').addEventListener('click', function() {
-  let targetDate;
-  while (!targetDate || targetDate <= new Date()) {
-    const dateInput = document.getElementById('date-input').value;
-    if (dateInput) {
-      targetDate = new Date(dateInput);
-    }
+  const dateInput = document.getElementById('date-input').value;
+  if (dateInput) {
+    const targetDate = new Date(dateInput);
+    startCountdown(targetDate);
   }
-  startCountdown(targetDate);
 });
 
 function startCountdown(targetDate) {
-  let countdown; // Declaração da variável countdown dentro da função
-
   if (countdown) {
     clearInterval(countdown); // Limpa o intervalo existente
   }
@@ -19,6 +16,8 @@ function startCountdown(targetDate) {
   countdown = setInterval(function() {
     const now = new Date().getTime();
     const distance = targetDate - now;
+
+    
 
     const years = Math.floor(distance / (1000 * 60 * 60 * 24 * 365));
     const days = Math.floor((distance % (1000 * 60 * 60 * 24 * 365)) / (1000 * 60 * 60 * 24));
