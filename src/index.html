@@ -26,6 +26,12 @@
       <br>
       <button id="start-button">Iniciar Contagem Regressiva</button>
   </div>
+  <script>
+    // Obter a data atual no formato YYYY-MM-DD
+    const today = new Date().toISOString().split('T')[0];
+    // Definir o atributo min do input de data
+    document.getElementById('date-input').setAttribute('min', today);
+  </script>
   <script src="script.js"></script>
 </body>
 </html>

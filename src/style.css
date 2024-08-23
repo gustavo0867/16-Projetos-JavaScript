@@ -5,12 +5,12 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradiente de roxo para azul */
+    background: linear-gradient(135deg, #ff0000, #000000); /* Gradiente de vermelho para preto */
     color: #ffffff;
 }
 
-#countdown #date-input #start-button {
-    background: rgba(37, 117, 252, 0.7); /* Fundo azul com opacidade */
+#countdown {
+    background: rgba(0, 0, 0, 0.7); /* Fundo preto com opacidade */
     padding: 40px 60px;
     border-radius: 15px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
@@ -29,27 +29,35 @@ body {
     margin-top: 10px;
     display: inline;
 }
+
 #date-input {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 20px;
-    margin-top: 40px;
+    background: rgba(255, 0, 0, 0.7); /* Fundo vermelho com opacidade */
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    color: #ffffff;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 1.2rem;
 }
 
 #start-button {
-    cursor: pointer;
-    transition: background 0.3s;
+    background: rgba(255, 0, 0, 0.7); /* Fundo vermelho com opacidade */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
     color: #ffffff;
-    font-size: 1.5rem;
-    padding: 20px 40px;
-    border-radius: 10px;
-    background: linear-gradient(135deg, #007BFF, #6C757D); /* Gradiente de azul para cinza */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 20px;
+    font-size: 1.2rem;
 }
 
 #start-button:hover {
-    background: linear-gradient(135deg, #6C757D, #007BFF); /* Gradiente de cinza para azul */
-}   
+    background: rgba(255, 0, 0, 0.9); /* Fundo vermelho mais opaco ao passar o mouse */
+}
