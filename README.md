@@ -18,4 +18,4 @@ Bem-vindo ao repositório do projeto "Contagem Regressiva"! Este projeto foi des
 
 ## Captura de tela
 
-![foto](https://uploaddeimagens.com.br/images/004/846/971/full/1.png?1727373753)
+![foto](https://i.postimg.cc/SsTDHbLf/Captura-de-tela-2024-09-26-141703.png)
